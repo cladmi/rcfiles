@@ -1,0 +1,8 @@
+Makefile I wrote for some FreeRTOS embedded development.
+
+The folder configuration is based on an application folder with a few application specific sources,
+and many included files stored in the FreeRTOS and drivers folder which are elsewhere on the system.
+
+I wanted a generic way to compile different targets with only one makefile.
+The only trick I needed, is that each generated file must depend of all the object files, even the ones it does not need.
+
