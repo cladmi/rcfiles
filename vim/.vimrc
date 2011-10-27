@@ -54,16 +54,20 @@ set pastetoggle=<F8>
 
 " colorise les nbsp
 highlight NbSp ctermbg=lightgray guibg=lightred
-match NbSp / /
+" match NbSp / /
+match NbSp /\%xa0/
 
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$\| \+\ze\t| [^\t]\zs\t\+/
+" highlight ExtraWhitespace ctermbg=red guibg=red
+" match ExtraWhitespace /\s\+$\| \+\ze\t| [^\t]\zs\t\+/
+" 
+" autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+" autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+" autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+" autocmd BufWinLeave * call clearmatches()
 
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
 
+set list
+set lcs:tab:¡\ ,trail:·
 
 "autocompletion
 set wildmenu
@@ -76,13 +80,17 @@ se laststatus=2
 set scrolloff=8
 
 " Allow the cursor to go in to "invalid" places
-set virtualedit=all
+" set virtualedit=all
 
 set incsearch
 
 
 " Add the unnamed register to the clipboard
 set clipboard+=unnamed
+
+" fileformats
+se fileformats=unix,dos
+se fileformat=unix
 
 
 " tags
@@ -94,4 +102,10 @@ set tags+=$HOME/.vim/tags/freertos
 
 map <F4> :TlistToggle<cr>
 map <F6> :!(cd %:p:h;ctags --sort=yes --language-force=C --c-kinds=+p --fields=+iaS --extra=+q *)&
+
+
+
+
+
+command CD cd %:p:h
 
