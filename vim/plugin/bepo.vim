@@ -66,8 +66,6 @@ noremap g" g0
 noremap « <
 noremap » >
 
-
-
 "    noremap " 1
 "    noremap 1 "
 "    noremap « 2

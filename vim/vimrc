@@ -1,5 +1,3 @@
-source ~/.vimrc.bepo
-
 let $PAGER=''
 
 if has("autocmd")
@@ -8,7 +6,7 @@ endif
 
 set background=dark
 
-set nu
+set number
 
 set encoding=utf-8
 set fileencoding=utf-8
@@ -16,31 +14,36 @@ set fileencoding=utf-8
 " recherche
 set hlsearch
 set incsearch
+set ignorecase
 set smartcase
 " avec *, pas de smartcase
 nnoremap * /\<<C-R>=expand('<cword>')<CR>\><CR>
 nnoremap # ?\<<C-R>=expand('<cword>')<CR>\><CR>
 
 
-set ai
-syn on
-set syntax=on
+set autoindent
+syntax on
 filetype indent plugin on
-set sw=8
-set ts=8
 
-  "indent auto lors du chargement pour le C
-au BufNewFile, BufRead *.c, *.cc, *.cpp, *.h		se cindent
+set expandtab
+set shiftwidth=4
+set tabstop=4
+
+" indent auto lors du chargement pour le C
+au BufNewFile, BufRead *.c, *.cc, *.cpp, *.h set cindent
+
+" Makefile use tabs
+autocmd FileType make setlocal noexpandtab
 
 "syn region myFold start="\#if" end="\#endif" transparent fold
 "syn sync fromstart
 
 
-se foldmethod=syntax
+set foldmethod=syntax
 "hi Folded ctermbg=255 ctermfg=0
 hi Folded ctermbg=125 ctermfg=42
 
-"se visualbell
+"set visualbell
 
 set mouse=a
 
@@ -73,8 +76,8 @@ set lcs:tab:¡\ ,trail:·
 set wildmenu
 
 "
-se ch=2
-se laststatus=2
+set cmdheight=2
+set laststatus=2
 " When the page starts to scroll, keep the cursor 8 lines from
 " the top and 8 lines from the bottom
 set scrolloff=8
@@ -89,8 +92,8 @@ set incsearch
 set clipboard+=unnamed
 
 " fileformats
-se fileformats=unix,dos
-se fileformat=unix
+set fileformats=unix,dos
+set fileformat=unix
 
 
 " tags
@@ -104,8 +107,4 @@ map <F4> :TlistToggle<cr>
 map <F6> :!(cd %:p:h;ctags --sort=yes --language-force=C --c-kinds=+p --fields=+iaS --extra=+q *)&
 
 
-
-
-
-command CD cd %:p:h
-
+" command CD cd %:p:h
