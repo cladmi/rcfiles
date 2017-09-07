@@ -1,3 +1,9 @@
+# In .config/git/config put your personnal configuration
+#
+# [user]
+# 	email = email@addre.sse
+# 	name = Your Name
+
 [push]
 	default = upstream
 [alias]
