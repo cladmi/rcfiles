@@ -1,3 +1,4 @@
 curdir=$(dirname "${BASH_SOURCE[0]}")
 
-source ${curdir}/bashrc.ssh_agent
+# Source all files ending with '.bashrc' in here
+source ${curdir}/*.bashrc
