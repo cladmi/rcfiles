@@ -116,4 +116,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-. ${HOME}/config/bashrc/bashrc
+. ${HOME}/.config/bashrc/bashrc
