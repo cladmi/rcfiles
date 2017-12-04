@@ -1,0 +1,7 @@
+! Disable Caps Lock
+clear lock
+! Bind it to Escape
+keycode 66 = Escape
+
+! Bind it to left Super 'WIN'
+! keycode 66 = Super_L
