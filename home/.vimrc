@@ -182,10 +182,14 @@ se foldmethod=syntax
 "hi Folded ctermbg=125 ctermfg=42
 
 
+" Remove trailing whitespaces
 map <F3> :%s/\s\+$//e <Return>
+" Clear non breaking spaces
 map <F4> :%s/\%xa0/ /ge <Return>
+" Enable spell
 map <F5> :setlocal spell spelllang=fr,en <Return>
 
+" Change paste mode to not do syntax update
 set pastetoggle=<F8>
 
 "
