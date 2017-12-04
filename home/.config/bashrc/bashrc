@@ -1,4 +1,7 @@
 curdir=$(dirname "${BASH_SOURCE[0]}")
 
 # Source all files ending with '.bashrc' in here
-source ${curdir}/*.bashrc
+for rcfile in ${curdir}/*.bashrc
+do
+    . "${rcfile}"
+done
