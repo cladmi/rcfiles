@@ -182,6 +182,14 @@ se foldmethod=syntax
 "hi Folded ctermbg=125 ctermfg=42
 
 
+" Enable using modeline for current buffer
+"   setting modeline globally can be a security issue
+"   reprocess file after setting (using :e could remove history)
+"   Print modeline status
+map <F2> :setlocal modeline <Return>
+            \:doautocmd BufRead <Return>
+            \:setlocal modeline? <Return>
+
 " Remove trailing whitespaces
 map <F3> :%s/\s\+$//e <Return>
 " Clear non breaking spaces
