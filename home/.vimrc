@@ -1,5 +1,6 @@
 " Autoreload vimrc
 autocmd! bufwritepost .vimrc source %
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Force terminal to 256 colors
@@ -18,7 +19,6 @@ set fileencoding=utf-8
 let $PAGER=''
 
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Configuration "
 """""""""""""""""
@@ -27,12 +27,10 @@ let $PAGER=''
 set background=dark
 set number
 
-
 " Text width, used for automatic wrapping or line length coloring
 set textwidth=80
 set nowrap " don't automatically wrap on load
 set fo-=t  " don't automatically wrap text when typing
-
 
 set mouse=a
 " Copying in VIM uses X11 (not the middle click one)
@@ -68,8 +66,6 @@ filetype off
 filetype plugin indent on
 syntax on
 
-
-
 " Showing line length limit in dark dark gray
 " set colorcolumn=+1   " one line
 let &colorcolumn=join(range(&textwidth+1,999),",")  " all section
@@ -79,8 +75,6 @@ highlight ColorColumn ctermbg=233
 " color nbsp
 highlight NbSp ctermbg=lightgray guibg=lightred
 match NbSp /\%xa0/
-
-
 
 " highlight ExtraWhitespace ctermbg=red guibg=red
 " match ExtraWhitespace /\s\+$\| \+\ze\t| [^\t]\zs\t\+/
@@ -94,6 +88,7 @@ set list
 set lcs:tab:\ \ ,nbsp:·,trail:·
 "set listchars=nbsp:¤,trail:¤,extends:>,precedes:< (à voir pour adapter)
 "set lcs:nbsp:·,trail:·
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indentation "
@@ -147,7 +142,6 @@ nnoremap <F9> :set hlsearch! hlsearch?<CR>
 " Now you can install any plugin into a .vim/bundle/plugin-name/ folder
 call pathogen#infect()
 
-
 " Settings for ctrlp
 " cd ~/.vim/bundle
 " git clone https://github.com/kien/ctrlp.vim.git
@@ -161,6 +155,7 @@ let g:ctrlp_prompt_mappings = {
             \ 'PrtSelectMove("k")': ['<c-s>', '<up>'],
             \ }
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key mapping "
 """""""""""""""
@@ -171,11 +166,9 @@ let g:ctrlp_prompt_mappings = {
 vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
 
-
 se foldmethod=syntax
 "hi Folded ctermbg=255 ctermfg=0
 "hi Folded ctermbg=125 ctermfg=42
-
 
 " Enable using modeline for current buffer
 "   setting modeline globally can be a security issue
