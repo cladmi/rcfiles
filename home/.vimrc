@@ -42,6 +42,13 @@ set mouse=a
 set wildmenu
 set wildmode=longest:full,list:full
 
+set wildignore+=*.pyc
+set wildignore+=*/build/*
+set wildignore+=*/coverage/*
+set wildignore+=*/bin/*,*.o,*.d,*.a
+set wildignore+=*.swp
+set wildignore+=*.pdf
+
 " Two high command/status line to  2 lines
 se cmdheight=2
 se laststatus=2
@@ -50,25 +57,6 @@ se laststatus=2
 " the top and 8 lines from the bottom
 set scrolloff=8
 
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Language specific configurations "
-""""""""""""""""""""""""""""""""""""
-
-
-au BufNewFile, BufRead *.c, *.cc, *.cpp, *.h se cindent
-au BufNewFile, BufRead *.py setfiletype python
-au FileType python setlocal smarttab
-
-
-set wildignore+=*.pyc
-set wildignore+=*/build/*
-set wildignore+=*/coverage/*
-set wildignore+=*/bin/*,*.o,*.d,*.a
-set wildignore+=*.swp
-set wildignore+=*.pdf
-
-au FileType tex se ts=2 sts=2 sw=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors "
@@ -125,6 +113,14 @@ set expandtab     " replace tabs by spaces
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Language specific configurations "
+""""""""""""""""""""""""""""""""""""
+autocmd FileType c      setlocal cindent smarttab
+autocmd FileType python setlocal smarttab
+autocmd FileType tex    setlocal ts=2 sts=2 sw=2
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Search configuration "
 """"""""""""""""""""""""
 
@@ -137,7 +133,7 @@ set smartcase
 nnoremap * /\<<C-R>=expand('<cword>')<CR>\><CR>
 nnoremap # ?\<<C-R>=expand('<cword>')<CR>\><CR>
 " Toggle hlsearch
-:noremap <F9> :set hlsearch! hlsearch?<CR>
+nnoremap <F9> :set hlsearch! hlsearch?<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -156,7 +152,6 @@ call pathogen#infect()
 " cd ~/.vim/bundle
 " git clone https://github.com/kien/ctrlp.vim.git
 let g:ctrlp_max_height = 8
-set wildignore+=*swp  " <PATTERN> " See language specific configuration
 " change move to c-t c-s (bepo) an remove old bindings
 let g:ctrlp_working_path_mode = 'wra'
 let g:ctrlp_prompt_mappings = {
