@@ -209,9 +209,8 @@ nnoremap Q q
 " Remap w
 command! W w
 command! Wq wq
-" command! WQ wq
-" command! Q q
-
+command! WQ wq
+command! Q q
 
 " working directory to current file, per buffer !
 " http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
