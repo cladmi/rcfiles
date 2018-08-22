@@ -8,7 +8,6 @@
 	default = upstream
 [alias]
 	l = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
-	pr = "!f() { pr=$(echo $2 | sed 's/^#//'); remote=refs/pull/$pr/head; git fetch -fu $1 $remote:pr/$pr && git checkout pr/$pr; }; f"
 	crepe = grep
 [pull]
 	rebase = preserve
