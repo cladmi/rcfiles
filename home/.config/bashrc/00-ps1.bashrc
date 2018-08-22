@@ -21,6 +21,6 @@ RETVAL="${R}${GRAY}\$?${BR}"
 # Two lines PS1, with added time and return value
 PS1="${BR}"
 PS1+="┌─[${USERHOST}]:[${WORKDIR}][${TIME}](${RETVAL})\n"
-PS1+="└─${R}$ "
+PS1+="└─${R}\$ "
 
 export PS1
