@@ -5,3 +5,6 @@ keycode 66 = Escape
 
 ! Bind it to left Super 'WIN'
 ! keycode 66 = Super_L
+
+! Replace crappy placed Printscr to Ctrl_R
+keycode 107 = Control_R
