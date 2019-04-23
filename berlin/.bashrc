@@ -116,6 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+[ -s "/home/harter/.scm_breeze/scm_breeze.sh" ] && source "/home/harter/.scm_breeze/scm_breeze.sh"
 source /opt/optrc
 
 # Parse other files at the end
