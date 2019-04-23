@@ -117,6 +117,8 @@ if ! shopt -oq posix; then
 fi
 
 [ -s "/home/harter/.scm_breeze/scm_breeze.sh" ] && source "/home/harter/.scm_breeze/scm_breeze.sh"
+
+export RIOT_MAKEFILES_GLOBAL_PRE=/home/harter/work/git/rapstore/riot-buildsystem-ci-server/boards/vaduz-boards.mk.pre
 source /opt/optrc
 
 # Parse other files at the end
