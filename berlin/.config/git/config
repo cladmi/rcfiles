@@ -1,3 +1,6 @@
 [user]
 	email = gaetan.harter@fu-berlin.de
 	name = Gaëtan Harter
+
+[commit]
+	gpgsign = true
