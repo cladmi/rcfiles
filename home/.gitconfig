@@ -9,6 +9,7 @@
 [alias]
 	l = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
 	crepe = grep
+	curbranch = rev-parse --abbrev-ref HEAD
 [pull]
 	rebase = preserve
 [rerere]
@@ -16,3 +17,7 @@
 	enabled = true
 [user]
 	signingkey = 52F772ECAC892F69
+[gpg]
+	program = /usr/bin/gpg2
+[diff]
+	colorMoved = default
