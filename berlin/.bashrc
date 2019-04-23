@@ -116,5 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+source /opt/optrc
+
 # Parse other files at the end
 . ${HOME}/.config/bashrc/bashrc
