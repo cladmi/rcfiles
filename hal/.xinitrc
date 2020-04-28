@@ -19,7 +19,8 @@ fi
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 
-feh --bg-scale ${HOME}/images/thereisnocloud-v2_large.png
+#feh --bg-scale ${HOME}/images/wallpapers/thereisnocloud-v2_large.png
+feh --bg-scale ${HOME}/images/wallpapers/Detail-from-Hieronymus-Boschs-Garden-of-Earthly-Delights-Netherlands-c.1490-1510.jpg
 
 # should re-do it here
 setxkbmap fr bepo
