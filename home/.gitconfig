@@ -7,7 +7,7 @@
 [push]
 	default = upstream
 [alias]
-	l = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
+	l = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad)%Creset %C(bold blue)<%an>%Creset'
 	crepe = grep
 	curbranch = rev-parse --abbrev-ref HEAD
 [pull]
