@@ -8,3 +8,6 @@ keycode 66 = Escape
 
 ! Replace crappy placed Printscr to Ctrl_R
 keycode 107 = Control_R
+
+! Typematrix left Win sends KP_End with Super_L Disable the KP_End
+keycode 87 =
