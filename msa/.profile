@@ -34,3 +34,6 @@ if command -v pyenv 1>/dev/null 2>&1
 then
     eval "$(pyenv init -)"
 fi
+
+SSH_KEY_COMMENT=cladmi@DEBN-L191-Linux
+ssh-add -l | grep -q ${SSH_KEY_COMMENT} || ssh-add ~/.ssh/id_rsa
