@@ -11,7 +11,7 @@
 	crepe = grep
 	curbranch = rev-parse --abbrev-ref HEAD
 [pull]
-	rebase = preserve
+	rebase = merges
 [rerere]
 	autoupdate = true
 	enabled = true
