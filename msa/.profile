@@ -28,12 +28,14 @@ fi
 
 xmodmap "${HOME}"/.Xmodmap
 
-export PYENV_ROOT="${HOME}/.pyenv"
-export PATH="${PYENV_ROOT}/bin:${PATH}"
-if command -v pyenv 1>/dev/null 2>&1
-then
-    eval "$(pyenv init -)"
-fi
+if [ "${OS}" != "Windows_NT" ] ; then
+    export PYENV_ROOT="${HOME}/.pyenv"
+    export PATH="${PYENV_ROOT}/bin:${PATH}"
+    if command -v pyenv 1>/dev/null 2>&1
+    then
+        eval "$(pyenv init -)"
+    fi
 
-SSH_KEY_COMMENT=cladmi@DEBN-L191-Linux
-ssh-add -l | grep -q ${SSH_KEY_COMMENT} || ssh-add ~/.ssh/id_rsa
+    SSH_KEY_COMMENT=cladmi@DEBN-L191-Linux
+    ssh-add -l | grep -q ${SSH_KEY_COMMENT} || ssh-add ~/.ssh/id_rsa
+fi
