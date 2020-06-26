@@ -1,4 +1,5 @@
 alias cladmi_mount='sshfs cladmi.eu:/media/5 /media/5'
+alias vm_mount='vmhgfs-fuse .host:/ /mnt/hgfs/ -o subtype=vmhgfs-fuse,allow_other'
 
 alias git_root='git rev-parse --show-toplevel'
 alias __git_dir='git rev-parse --git-dir'
