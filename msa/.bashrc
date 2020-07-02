@@ -113,4 +113,4 @@ fi
 
 . ${HOME}/.config/bashrc/bashrc
 
-[ -s "/home/cladmi/.scm_breeze/scm_breeze.sh" ] && source "/home/cladmi/.scm_breeze/scm_breeze.sh"
+[ -s "${HOME}/.scm_breeze/scm_breeze.sh" ] && source "${HOME}/.scm_breeze/scm_breeze.sh"
