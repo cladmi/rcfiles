@@ -14,4 +14,8 @@ PROGRAMS+=("python3-dev" "python3-pip")
 PROGRAMS+=("sshfs")
 PROGRAMS+=("mplayer")
 
+PROGRAMS+=("docker.io")
+
+PROGRAMS+=("five-or-more")
+
 sudo apt install ${PROGRAMS[*]}
