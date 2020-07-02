@@ -1,4 +1,6 @@
 alias cladmi_mount='sshfs cladmi.eu:/media/5 /media/5'
+alias cladmi_proxy='ssh -D 12345 -q -C -N cladmi.eu'
+alias firefox_proxy='firefox -P proxy'
 alias vm_mount='vmhgfs-fuse .host:/ /mnt/hgfs/ -o subtype=vmhgfs-fuse,allow_other'
 
 alias git_root='git rev-parse --show-toplevel'
