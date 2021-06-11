@@ -1,7 +1,6 @@
 ### Commented entries have reasonable defaults.
-# equivs-build FILE
-# sudo dpkg -i FILE_1.0.deb
-# sudo apt-get -f install
+# equivs-build opsy-deps-gha.equivs \
+#     && sudo apt install ./opsy-deps-gha_1.0_all.deb
 
 ### Uncomment to edit them.
 # Source: <source package name; defaults to package name>
