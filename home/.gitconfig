@@ -21,3 +21,5 @@
 	program = /usr/bin/gpg2
 [diff]
 	colorMoved = default
+[color]
+	ui = auto
