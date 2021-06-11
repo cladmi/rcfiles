@@ -25,3 +25,6 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+# Local configurations
+export COQOS_LICENSE_FILE=${HOME}/.local/share/coqos/coqos.lic
