@@ -154,6 +154,8 @@ mode "resize" {
 
 bindsym $mod+w mode "resize"
 
+bindsym $mod+Pause exec "i3lock -p default -c 000000"
+
 # Pulse Audio controls
 # bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%    && killall -SIGUSR1 i3status
 # bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%    && killall -SIGUSR1 i3status
