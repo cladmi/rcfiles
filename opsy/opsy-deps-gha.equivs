@@ -24,7 +24,12 @@ Depends:
     htop,
     python,
     gnupg2,
-    diffstat,texinfo,gawk,chrpath,python-lxml,
+    build-essential,curl,wget,python2.7,
+    autotools-dev,automake,cpio,unzip,diffstat,texinfo,gawk,chrpath,
+    lzop,kmod,
+    libssl-dev,
+    python-setuptools,python-lxml,
+    xterm,fakeroot,
     avahi-daemon,screen,gajim
 # Recommends: <comma-separated list of packages>
 # Suggests: <comma-separated list of packages>
