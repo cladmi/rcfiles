@@ -15,12 +15,17 @@ Package: opsy-deps-gha
 # Pre-Depends: <comma-separated list of packages>
 # Depends: <comma-separated list of packages>
 
-# Local config: git, stow, equivs
-
+# python-is-python3, Bitbake is not ready yet in coky
 Depends:
     git, stow, equivs,
-    gvim,
-    i3, i3status, suckless-tools, dunst, i3lock
+    gvim, tmux,
+    i3, i3status, suckless-tools, dunst, i3lock,
+    pavucontrol,
+    htop,
+    python,
+    gnupg2,
+    diffstat,texinfo,gawk,chrpath,python-lxml,
+    avahi-daemon,screen,gajim
 # Recommends: <comma-separated list of packages>
 # Suggests: <comma-separated list of packages>
 # Provides: <comma-separated list of packages>
