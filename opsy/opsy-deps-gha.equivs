@@ -31,9 +31,13 @@ Architecture: all
 # Changelog: <changelog file; defaults to a generic changelog>
 # Readme: <README.Debian file; defaults to a generic one>
 # Extra-Files: <comma-separated list of additional files for the doc directory>
+
 # Links: <pair of space-separated paths; First is path symlink points at, second is filename of link>
 # Files: <pair of space-separated paths; First is file to include, second is destination>
 #  <more pairs, if there's more than one file to include. Notice the starting space>
+Files: opsy-deps-gha/etc/acpi/actions/amdgpu-brightness.sh /etc/acpi/actions/
+ opsy-deps-gha/etc/acpi/events/amdgpu-brightness /etc/acpi/events/
+
 Description: Dependencies for my machine GHA
  long description and info
  .
