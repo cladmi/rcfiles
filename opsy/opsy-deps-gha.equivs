@@ -30,6 +30,7 @@ Depends:
     libssl-dev,
     python-setuptools,python-lxml,
     xterm,fakeroot,
+    python-dev,
     avahi-daemon,screen,gajim
 # Recommends: <comma-separated list of packages>
 # Suggests: <comma-separated list of packages>
