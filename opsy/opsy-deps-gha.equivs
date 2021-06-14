@@ -31,6 +31,10 @@ Depends:
     python-setuptools,python-lxml,
     xterm,fakeroot,
     python-dev,
+    libtinfo5,
+    meson,python3-setuptools,
+    flex,bison,
+    libsystemd-dev,libasound2-dev,libpulse-dev,
     avahi-daemon,screen,gajim
 # Recommends: <comma-separated list of packages>
 # Suggests: <comma-separated list of packages>
