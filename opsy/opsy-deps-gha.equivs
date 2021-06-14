@@ -1,6 +1,6 @@
 ### Commented entries have reasonable defaults.
 # equivs-build opsy-deps-gha.equivs \
-#     && sudo apt install ./opsy-deps-gha_1.0_all.deb
+#     && sudo apt install --force-reinstall=true ./opsy-deps-gha_1.0_all.deb
 
 ### Uncomment to edit them.
 # Source: <source package name; defaults to package name>
