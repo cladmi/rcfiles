@@ -112,5 +112,3 @@ if ! shopt -oq posix; then
 fi
 
 . ${HOME}/.config/bashrc/bashrc
-
-[ -s "${HOME}/.scm_breeze/scm_breeze.sh" ] && source "${HOME}/.scm_breeze/scm_breeze.sh"
