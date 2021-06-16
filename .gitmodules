@@ -10,10 +10,6 @@
 	path = home/.vim/bundle/vim-python-pep8-indent
 	url = https://github.com/Vimjas/vim-python-pep8-indent.git
 	branch = master
-[submodule "msa/.pyenv"]
-	path = msa/.pyenv
-	url = https://github.com/pyenv/pyenv.git
-	branch = master
 [submodule "opsy/.scm_breeze"]
 	path = home/.local/share/scm_breeze
 	url = https://github.com/scmbreeze/scm_breeze.git
