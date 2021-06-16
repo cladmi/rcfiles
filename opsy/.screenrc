@@ -1,0 +1,4 @@
+# set the second mark, write to the screen-exchange
+# file, and use xsel to synchronize the paste buffer
+# with the X selection.
+bindkey -m > eval "stuff ' '" writebuf "exec sh -c '/usr/bin/xsel -bi < /tmp/screen-exchange'"
