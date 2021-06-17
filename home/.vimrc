@@ -18,6 +18,10 @@ set fileencoding=utf-8
 " This works with the PAGER setting in .profile or .bashrc.
 let $PAGER=''
 
+" Set global spell languages.
+" Spell still disabled by default
+set spelllang=fr,en
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Configuration "
@@ -182,8 +186,8 @@ map <F2> :setlocal modeline <Return>
 map <F3> :%s/\s\+$//e <Return>
 " Clear non breaking spaces
 map <F4> :%s/\%xa0/ /ge <Return>
-" Enable spell
-map <F5> :setlocal spell spelllang=fr,en <Return>
+" Toggle spell and show value
+map <F5> :setlocal spell! spell? <Return>
 
 " Change paste mode to not do syntax update
 set pastetoggle=<F8>
