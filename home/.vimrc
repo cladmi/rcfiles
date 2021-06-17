@@ -117,6 +117,7 @@ set expandtab     " replace tabs by spaces
 autocmd FileType c      setlocal cindent smarttab
 autocmd FileType python setlocal smarttab
 autocmd FileType tex    setlocal ts=2 sts=2 sw=2
+autocmd FileType gitcommit setlocal spell
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
