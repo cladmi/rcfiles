@@ -18,12 +18,13 @@ Package: opsy-deps-gha
 # python-is-python3, Bitbake is not ready yet in coky
 Depends:
     git, stow, equivs,
+    sshfs,
     gvim, tmux,
     i3, i3status, suckless-tools, dunst, i3lock,
     pavucontrol,
     htop,
     python,
-    gnupg2,
+    gnupg2, scdaemon, pcscd,
     build-essential,curl,wget,python2.7,
     autotools-dev,automake,cpio,unzip,diffstat,texinfo,gawk,chrpath,
     lzop,kmod,
@@ -52,6 +53,7 @@ Architecture: all
 #  <more pairs, if there's more than one file to include. Notice the starting space>
 Files: opsy-deps-gha/etc/acpi/actions/amdgpu-brightness.sh /etc/acpi/actions/
  opsy-deps-gha/etc/acpi/events/amdgpu-brightness /etc/acpi/events/
+ opsy-deps-gha/etc/udev/rules.d/41-nitrokey.rules /etc/udev/rules.d/
 
 Description: Dependencies for my machine GHA
  long description and info
