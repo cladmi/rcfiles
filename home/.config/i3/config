@@ -123,8 +123,6 @@ bindsym $mod+Shift+0 move container to workspace number 10
 bindsym $mod+Shift+u reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 #bindsym $mod+Shift+r restart
-# Move workspace to other screen (if left/right)
-bindsym $mod+o move workspace to output left
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
@@ -153,6 +151,9 @@ mode "resize" {
 }
 
 bindsym $mod+w mode "resize"
+
+# Move workspace to other screen (if left/right)
+bindsym $mod+o move workspace to output left
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@   +5%    && killall -SIGUSR1 i3status
