@@ -1,3 +1,6 @@
+# Computer specific configuration
+# Global in .config/git/config
+
 [user]
 	email = gaetan.harter@fu-berlin.de
 	name = Gaëtan Harter
