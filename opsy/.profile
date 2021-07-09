@@ -28,3 +28,4 @@ fi
 
 # Local configurations
 export COQOS_LICENSE_FILE=${HOME}/.local/share/coqos/coqos.lic
+export DL_DIR=${HOME}/.cache/bitbake/downloads
