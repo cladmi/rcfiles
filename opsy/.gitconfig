@@ -4,3 +4,11 @@
 [user]
 	email = gaetan.harter@opensynergy.com
 	name = Gaetan Harter
+
+[sendemail]
+	smtpUser = gha@opensynergy.com
+	smtpServer = smtp.office365.com
+	smtpEncryption = tls
+	smtpServerPort = 587
+[credential]
+	helper = cache --timeout 3600
