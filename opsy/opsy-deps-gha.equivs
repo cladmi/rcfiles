@@ -54,6 +54,7 @@ Architecture: all
 Files: opsy-deps-gha/etc/acpi/actions/amdgpu-brightness.sh /etc/acpi/actions/
  opsy-deps-gha/etc/acpi/events/amdgpu-brightness /etc/acpi/events/
  opsy-deps-gha/etc/udev/rules.d/41-nitrokey.rules /etc/udev/rules.d/
+ opsy-deps-gha/etc/X11/xorg.conf.d/80-yubikey-qwerty.conf /etc/X11/xorg.conf.d/
 
 Description: Dependencies for my machine GHA
  long description and info
