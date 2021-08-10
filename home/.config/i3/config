@@ -157,6 +157,13 @@ bindsym $mod+o move workspace to output right
 # Switch to next workspace
 bindsym $mod+Tab focus output right
 
+bindsym $mod+dollar  workspace number 0
+bindsym $mod+equal   workspace number 11: chat
+bindsym $mod+percent workspace number 12: lab
+bindsym $mod+Shift+dollar  move container to workspace number 0
+bindsym $mod+Shift+equal   move container to workspace number 11: chat
+bindsym $mod+Shift+percent move container to workspace number 12: lab
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@   +5%    && killall -SIGUSR1 i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@   -5%    && killall -SIGUSR1 i3status
