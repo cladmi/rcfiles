@@ -4,6 +4,8 @@
 [user]
 	email = gaetan.harter@opensynergy.com
 	name = Gaetan Harter
+[color]
+	ui = auto
 
 [sendemail]
 	smtpUser = gha@opensynergy.com
