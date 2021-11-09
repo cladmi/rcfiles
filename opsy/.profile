@@ -35,3 +35,5 @@ export GO11MODULE=auto
 # Local configurations
 export COQOS_LICENSE_FILE=${HOME}/.local/share/coqos/coqos.lic
 export DL_DIR=${HOME}/.cache/bitbake/downloads
+
+test -d ${HOME}/.config/xmodmap && xmodmap ${HOME}/.config/xmodmap/*.map

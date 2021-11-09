@@ -25,6 +25,6 @@ feh --bg-scale ${HOME}/images/wallpapers/Detail-from-Hieronymus-Boschs-Garden-of
 # should re-do it here
 setxkbmap fr bepo
 setxkbmap -option caps:hyper
-xmodmap .xmodmap
+test -d ${HOME}/.config/xmodmap && xmodmap ${HOME}/.config/xmodmap/*.map
 
 exec i3 -d -V > .i3_${DISPLAY}.log

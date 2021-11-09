@@ -1,0 +1,4 @@
+! Change Caps-Lock -> Shift
+clear lock
+keycode 66 = Shift_L
+add Shift = Shift_L
