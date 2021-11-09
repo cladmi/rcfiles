@@ -26,6 +26,12 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+if [ -d "${HOME}/.gem/ruby/2.7.0/bin" ] ; then
+    PATH="${HOME}/.gem/ruby/2.7.0/bin:$PATH"
+fi
+export GOPATH="${HOME}"/go
+export GO11MODULE=auto
+
 # Local configurations
 export COQOS_LICENSE_FILE=${HOME}/.local/share/coqos/coqos.lic
 export DL_DIR=${HOME}/.cache/bitbake/downloads
