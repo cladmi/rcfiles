@@ -1,0 +1,18 @@
+#! /bin/bash
+
+CURRENT=$(setxkbmap  -query  | grep -e layout -e variant | sed -e 's/.*: *//' | tr '\n' ' ' | sed 's/ *$//')
+
+case ${CURRENT} in
+    "fr bepo")
+        echo Switch to 'us'
+        setxkbmap us
+        ;;
+    "us")
+        echo Switch to 'fr bepo'
+        setxkbmap fr bepo
+        ;;
+    *)
+        echo Unkwown, switch to 'fr bepo'
+        setxkbmap fr bepo
+        ;;
+esac
