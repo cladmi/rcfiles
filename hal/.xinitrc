@@ -29,4 +29,8 @@ setxkbmap fr bepo
 setxkbmap -option caps:hyper
 test -d ${HOME}/.config/xmodmap && xmodmap ${HOME}/.config/xmodmap/*.map
 
-exec i3 -d -V > .i3_${DISPLAY}.log
+# Cursor disappears after delay
+unclutter &
+
+exec i3
+#exec i3 -d -V > .i3_${DISPLAY}.log
