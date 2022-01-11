@@ -1,9 +1,9 @@
-[submodule "home/.vim/bundle/ctrlp.vim"]
-	path = home/.vim/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
+[submodule "home/.vim/pack/ctrlpvim/start/ctrlp.vim"]
+	path = home/.vim/pack/ctrlpvim/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
 	branch = master
 [submodule "home/.vim/bundle/vim-fugitive"]
-	path = home/.vim/bundle/vim-fugitive
+	path = home/.vim/pack/tpope/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 	branch = master
 [submodule "home/.vim/bundle/vim-python-pep8-indent"]
