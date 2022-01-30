@@ -1,0 +1,2 @@
+event=video/brightness.*
+action=/etc/acpi/actions/intel-backlight.sh %e
