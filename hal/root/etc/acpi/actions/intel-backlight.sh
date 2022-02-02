@@ -5,6 +5,7 @@ BACKLIGHT="/sys/class/backlight/intel_backlight"
 CFG=${BACKLIGHT}/brightness
 
 MIN=0
+MIN_NEXT=$((MIN+1))
 MAX=$(cat ${BACKLIGHT}/max_brightness)
 CUR=$(cat ${CFG})
 
@@ -21,13 +22,17 @@ case "$1" in
     video/brightness*)
         case "$2" in
             BRTUP)
-                new=$(( CUR + STEP ))
+                # Allow getting the minimal next value
+                new=$(( CUR==MIN ? MIN_NEXT : CUR+STEP ))
                 new=$(( new<MAX ? new : MAX ))
                 logger "Brightness up ${new}"
                 ;;
             BRTDN)
                 new=$(( CUR - STEP ))
-                new=$(( new>MIN ? new : MIN ))
+                if (( new < MIN )); then
+                    # Allow getting the MIN_NEXT value
+                    new=$(( CUR<=MIN_NEXT ? MIN : MIN_NEXT ))
+                fi
                 logger "Brightness down ${new}"
                 ;;
         esac
