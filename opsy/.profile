@@ -30,7 +30,7 @@ if [ -d "${HOME}/.gem/ruby/2.7.0/bin" ] ; then
     PATH="${HOME}/.gem/ruby/2.7.0/bin:$PATH"
 fi
 export GOPATH="${HOME}"/go
-export GO11MODULE=auto
+export GO111MODULE=auto
 
 # Local configurations
 export COQOS_LICENSE_FILE=${HOME}/.local/share/coqos/coqos.lic
