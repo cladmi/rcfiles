@@ -36,4 +36,4 @@ export GO111MODULE=auto
 export COQOS_LICENSE_FILE=${HOME}/.local/share/coqos/coqos.lic
 export DL_DIR=${HOME}/.cache/bitbake/downloads
 
-test -d ${HOME}/.config/xmodmap && xmodmap ${HOME}/.config/xmodmap/*.map
+test -n "${DISPLAY}" && test -d ${HOME}/.config/xmodmap && ( xmodmap ${HOME}/.config/xmodmap/*.map & ) 2>/dev/null
