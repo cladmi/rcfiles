@@ -98,18 +98,14 @@ set lcs:tab:\ \ ,nbsp:·,trail:·
 " Indentation "
 """""""""""""""
 
-se autoindent
+set autoindent
 set tabstop=4
-set softtabstop=4
 set shiftwidth=4
 set shiftround    " when using > or < round tab to multiple of shiftwidth
 set expandtab     " replace tabs by spaces
 
-" Projet C
-" set ts=8
-" se sts=8
-" set sw=8 noet
-
+" Disable softtabstop
+set softtabstop=0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language specific configurations "
