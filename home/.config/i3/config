@@ -178,6 +178,9 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute   @DEFAULT_SINK@   toggle && killall -SIGUSR1 i3status
 bindcode 198                 exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && killall -SIGUSR1 i3status
 
+
+bindsym $mod+x exec autorandr --cycle
+
 # Lock
 bindsym $mod+Delete exec "i3lock --pointer default --color 000000 --show-failed-attempts"
 
