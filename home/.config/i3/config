@@ -179,8 +179,6 @@ bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute   @DEFAULT
 bindcode 198                 exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && killall -SIGUSR1 i3status
 
 
-bindsym $mod+x exec autorandr --cycle
-
 # Lock
 bindsym $mod+Delete exec "i3lock --pointer default --color 000000 --show-failed-attempts"
 
@@ -188,7 +186,7 @@ bindsym $mod+Delete exec "i3lock --pointer default --color 000000 --show-failed-
 bindsym Scroll_Lock exec "setxkb_switch"
 
 # Auto screen configuration
-bindsym $mod+x exec --no-startup-id autorandr --change
+bindsym $mod+x exec --no-startup-id autorandr --cycle
 exec_always --no-startup-id autorandr --change
 
 # Start i3bar to display a workspace bar (plus the system information i3status
