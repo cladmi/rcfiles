@@ -14,3 +14,7 @@
 	path = home/.local/share/scm_breeze
 	url = https://github.com/scmbreeze/scm_breeze.git
 	branch = master
+[submodule "opsy/.local/share/pyenv"]
+	path = opsy/.pyenv
+	url = https://github.com/pyenv/pyenv.git
+	branch = master
