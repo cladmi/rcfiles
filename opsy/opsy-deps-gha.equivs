@@ -19,10 +19,14 @@ Package: opsy-deps-gha
 Depends:
     git, stow, equivs,
     sshfs,
+    mlocate,
     gvim, tmux,
     i3, i3status, suckless-tools, dunst, i3lock,
+    mplayer,ffmpeg,
+    scrot,
     pavucontrol,
-    htop,
+    htop, iftop,
+    pandoc,texlive-full,
     python,
     gnupg2, scdaemon, pcscd,
     build-essential,curl,wget,python2.7,
@@ -36,7 +40,11 @@ Depends:
     meson,python3-setuptools,
     flex,bison,
     libsystemd-dev,libasound2-dev,libpulse-dev,
-    avahi-daemon,screen,gajim
+    avahi-daemon,screen,
+    python3-pip,python3-requests,python3-urllib3,
+    golang-go,plantuml,
+    docker.io,
+
 # Recommends: <comma-separated list of packages>
 # Suggests: <comma-separated list of packages>
 # Provides: <comma-separated list of packages>
