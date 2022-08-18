@@ -158,11 +158,11 @@ bindsym $mod+o move workspace to output right
 bindsym $mod+Tab focus output right
 
 bindsym $mod+dollar  workspace number 0
-bindsym $mod+equal   workspace number 11: chat
-bindsym $mod+percent workspace number 12: lab
+bindsym $mod+equal   workspace number 11: mail
+bindsym $mod+percent workspace number 12: chat
 bindsym $mod+Shift+dollar  move container to workspace number 0
-bindsym $mod+Shift+equal   move container to workspace number 11: chat
-bindsym $mod+Shift+percent move container to workspace number 12: =
+bindsym $mod+Shift+equal   move container to workspace number 11: mail
+bindsym $mod+Shift+percent move container to workspace number 12: chat
 
 assign [class="^Signal$"] workspace number 9
 assign [class="^TelegramDesktop$"] workspace number 9
