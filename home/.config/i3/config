@@ -167,8 +167,8 @@ bindsym $mod+Shift+percent move container to workspace number 12: chat
 assign [class="^Signal$"] workspace number 10
 assign [class="^TelegramDesktop$"] workspace number 10
 
-assign [class="^Thunderbird"] 10: mail
-assign [class="^Microsoft Teams"] 11: chat
+assign [class="^Thunderbird"] 11: mail
+assign [class="^Microsoft Teams"] 12: chat
 assign [class="^Nm-applet"] sticky enable
 for_window [class="^Nm-applet"] sticky enable
 
