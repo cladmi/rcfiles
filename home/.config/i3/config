@@ -168,6 +168,7 @@ assign [class="^Signal$"] workspace number 10
 assign [class="^TelegramDesktop$"] workspace number 10
 
 assign [class="^Thunderbird"] 11: mail
+assign [class="^thunderbird"] 11: mail
 assign [class="^Microsoft Teams"] 12: chat
 assign [class="^Nm-applet"] sticky enable
 for_window [class="^Nm-applet"] sticky enable
