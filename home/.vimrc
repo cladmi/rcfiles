@@ -111,6 +111,7 @@ set softtabstop=0
 " Language specific configurations "
 """"""""""""""""""""""""""""""""""""
 autocmd FileType c      setlocal noexpandtab ts=8 sw=8
+autocmd FileType cpp    setlocal noexpandtab ts=8 sw=8
 autocmd FileType dts    setlocal noexpandtab ts=8 sw=8
 "autocmd FileType python setlocal smarttab
 autocmd FileType tex    setlocal ts=2 sw=2
