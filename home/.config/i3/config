@@ -187,7 +187,7 @@ bindsym $mod+Delete exec "i3lock --pointer default --color 000000 --show-failed-
 bindsym Scroll_Lock exec "setxkb_switch"
 
 # Auto screen configuration
-bindsym $mod+x exec --no-startup-id autorandr --cycle
+bindsym $mod+x exec --no-startup-id autorandr --change
 exec_always --no-startup-id autorandr --change
 
 # Autostart desktop applications
