@@ -112,3 +112,4 @@ if ! shopt -oq posix; then
 fi
 
 . ${HOME}/.config/bashrc/bashrc
+. "$HOME/.cargo/env"

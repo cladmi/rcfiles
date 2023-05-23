@@ -38,3 +38,4 @@ export DL_DIR=${HOME}/.cache/bitbake/downloads
 export SSTATE_DIR=${HOME}/.cache/bitbake/sstate-cache
 
 test -n "${DISPLAY}" && test -d ${HOME}/.config/xmodmap && ( xmodmap ${HOME}/.config/xmodmap/*.map & ) 2>/dev/null
+. "$HOME/.cargo/env"
