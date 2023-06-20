@@ -183,6 +183,8 @@ bindcode 198                 exec --no-startup-id pactl set-source-mute @DEFAULT
 # Lock
 bindsym $mod+Delete exec "i3lock --pointer default --color 000000 --show-failed-attempts"
 
+bindsym $mod+z exec "nmcli connection down opsy-gha; nmcli connection up opsy-gha"
+
 # Change keyboard Fn+k
 bindsym Scroll_Lock exec "setxkb_switch"
 
