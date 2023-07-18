@@ -1,0 +1,5 @@
+#! /bin/sh
+
+ningyo list "$@" \
+    | sed 's/ *$//g' \
+    | grep --color=auto -e RenesasRcarH3SalvatorXSv3 -e ADPAirSA8155P -e ADPAirSA8295Pv2 -e 10.25. -e shelf
