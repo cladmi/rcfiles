@@ -1,2 +1,0 @@
-#! /bin/sh
-nice -n 10 /usr/bin/make $@
