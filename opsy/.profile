@@ -36,6 +36,8 @@ export GO111MODULE=auto
 export COQOS_LICENSE_FILE=${HOME}/.local/share/coqos/coqos.lic
 export DL_DIR=${HOME}/.cache/bitbake/downloads
 export SSTATE_DIR=${HOME}/.cache/bitbake/sstate-cache
+export BB_ENV_EXTRAWHITE="DL_DIR SSTATE_DIR SSTATE_LOCAL_MIRROR"
+export BB_ENV_PASSTHROUGH_ADDITIONS="DL_DIR SSTATE_DIR SSTATE_LOCAL_MIRROR"
 
 test -n "${DISPLAY}" && test -d ${HOME}/.config/xmodmap && ( xmodmap ${HOME}/.config/xmodmap/*.map & ) 2>/dev/null
 . "$HOME/.cargo/env"
