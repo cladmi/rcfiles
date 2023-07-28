@@ -1,7 +1,13 @@
 #! /bin/sh
 
 filter() {
-    grep --color=no -e RenesasRcarH3SalvatorXSv3 -e ADPAirSA8155P -e ADPAirSA8295Pv2 -e 10.25. -e shelf
+    grep --color=no \
+        -e RenesasRcarH3SalvatorXSv3 \
+        -e ADPAirSA8155P \
+        -e ADPAirSA8295Pv2 \
+        -e NXPimx8mek \
+        -e 10.25. \
+        -e shelf
 }
 
 strip() {
