@@ -66,9 +66,9 @@ set scrolloff=8
 
 " Enable syntax highlighting
 " You need to reload this file for the change to apply
+syntax enable
 filetype off
 filetype plugin indent on
-syntax on
 
 " Showing line length limit in dark dark gray
 " set colorcolumn=+1   " one line
@@ -113,6 +113,7 @@ set softtabstop=0
 autocmd FileType c      setlocal noexpandtab ts=8 sw=8
 autocmd FileType cpp    setlocal noexpandtab ts=8 sw=8
 autocmd FileType dts    setlocal noexpandtab ts=8 sw=8
+autocmd FileType cmake  setlocal noexpandtab ts=8 sw=8
 "autocmd FileType python setlocal smarttab
 autocmd FileType tex    setlocal ts=2 sw=2
 autocmd FileType gitcommit setlocal spell
