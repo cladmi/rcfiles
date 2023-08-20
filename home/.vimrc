@@ -144,20 +144,24 @@ nnoremap <F9> :set hlsearch! hlsearch?<CR>
 " curl -so ~/.vim/autoload/pathogen.vim \
 "     https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
 " Now you can install any plugin into a .vim/bundle/plugin-name/ folder
-call pathogen#infect()
+if exists(':pathogen:')
+    call pathogen#infect()
+endif
 
 " Settings for ctrlp
 " cd ~/.vim/bundle
 " git clone https://github.com/kien/ctrlp.vim.git
-let g:ctrlp_max_height = 8
-" change move to c-t c-s (bepo) an remove old bindings
-let g:ctrlp_working_path_mode = 'wra'
-let g:ctrlp_prompt_mappings = {
-            \ 'AcceptSelection("t")': [],
-            \ 'AcceptSelection("h")': ['<c-x>', '<c-cr>'],
-            \ 'PrtSelectMove("j")': ['<c-t>', '<down>'],
-            \ 'PrtSelectMove("k")': ['<c-s>', '<up>'],
-            \ }
+if exists(':ctrlp:')
+    let g:ctrlp_max_height = 8
+    " change move to c-t c-s (bepo) an remove old bindings
+    let g:ctrlp_working_path_mode = 'wra'
+    let g:ctrlp_prompt_mappings = {
+                \ 'AcceptSelection("t")': [],
+                \ 'AcceptSelection("h")': ['<c-x>', '<c-cr>'],
+                \ 'PrtSelectMove("j")': ['<c-t>', '<down>'],
+                \ 'PrtSelectMove("k")': ['<c-s>', '<up>'],
+                \ }
+endif
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
