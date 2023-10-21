@@ -192,6 +192,8 @@ bindsym Scroll_Lock exec "setxkb_switch"
 bindsym $mod+x exec --no-startup-id autorandr --change
 exec_always --no-startup-id autorandr --change
 
+bindsym $mod+n exec --no-startup-id manual_redshift
+
 # Autostart desktop applications
 exec_always --no-startup-id dex --autostart --search-paths ~/.config/autostart
 
