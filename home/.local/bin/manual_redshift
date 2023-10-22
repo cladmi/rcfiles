@@ -30,7 +30,7 @@ def set_temperature(temperature):
 
 
 def kill_redshift():
-    subprocess.check_call(["pkill", "-f", "/usr/bin/redshift"])
+    subprocess.call(["pkill", "-f", "/usr/bin/redshift"])
 
 
 @contextlib.contextmanager
