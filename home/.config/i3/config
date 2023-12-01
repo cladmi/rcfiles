@@ -167,6 +167,8 @@ bindsym $mod+Shift+percent move container to workspace number 12: chat
 
 assign [title="^Firefox - Choose User Profile$"] workspace number 1
 
+assign [class="^easyeffects$"] workspace number 9
+
 assign [class="^Signal$"] workspace number 10
 assign [class="^TelegramDesktop$"] workspace number 10
 
