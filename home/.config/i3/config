@@ -166,6 +166,7 @@ bindsym $mod+Shift+equal   move container to workspace number 11: mail
 bindsym $mod+Shift+percent move container to workspace number 12: chat
 
 assign [title="^Firefox - Choose User Profile$"] workspace number 1
+for_window [window_role="PictureInPicture"] floating disable
 
 assign [class="^easyeffects$"] workspace number 9
 
