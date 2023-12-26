@@ -172,6 +172,7 @@ assign [class="^easyeffects$"] workspace number 9
 
 assign [class="^Signal$"] workspace number 10
 assign [class="^TelegramDesktop$"] workspace number 10
+assign [class="^Whatsapp-for-linux$"] workspace number 10
 
 assign [class="^Thunderbird"] 11: mail
 assign [class="^thunderbird"] 11: mail
