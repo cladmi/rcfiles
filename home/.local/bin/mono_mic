@@ -1,0 +1,7 @@
+#! /bin/sh
+
+pactl unload-module module-remap-source 2>/dev/null || true
+
+pactl load-module module-remap-source source_name=MonoSourceRight master_channel_map=front-right channel_map=mono
+pactl set-default-source MonoSourceRight
+pactl load-module module-loopback latency_msec=1 source_dont_move="true" sink_dont_move="true"
