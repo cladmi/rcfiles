@@ -3,6 +3,15 @@ autocmd! bufwritepost .vimrc source %
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Setup Pathogen to manage your plugins
+" mkdir -p ~/.vim/autoload ~/.vim/bundle
+" curl -so ~/.vim/autoload/pathogen.vim \
+"     https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
+" Now you can install any plugin into a .vim/bundle/plugin-name/ folder
+if exists(':pathogen:')
+    execute pathogen#infect()
+endif
+
 " Force terminal to 256 colors
 set t_Co=256
 
@@ -135,18 +144,10 @@ nnoremap # ?\<<C-R>=expand('<cword>')<CR>\><CR>
 nnoremap <F9> :set hlsearch! hlsearch?<CR>
 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""
 " Modules "
 """""""""""
 
-" Setup Pathogen to manage your plugins
-" mkdir -p ~/.vim/autoload ~/.vim/bundle
-" curl -so ~/.vim/autoload/pathogen.vim \
-"     https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
-" Now you can install any plugin into a .vim/bundle/plugin-name/ folder
-if exists(':pathogen:')
-    call pathogen#infect()
-endif
 
 " Settings for ctrlp
 " cd ~/.vim/bundle
