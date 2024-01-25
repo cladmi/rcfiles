@@ -1,0 +1,4 @@
+#! /bin/sh
+
+SHRUG="¯\_(ツ)_/¯"
+printf "%s" "${SHRUG}" | xclip -i -selection clipboard
