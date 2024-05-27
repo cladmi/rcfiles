@@ -1,0 +1,2 @@
+#! /bin/sh
+dex --autostart --search-paths ~/.config/autostart_home
