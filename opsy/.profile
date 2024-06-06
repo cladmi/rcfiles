@@ -37,4 +37,4 @@ export COQOS_LICENSE_FILE=${HOME}/.local/share/coqos/coqos.lic
 
 test -n "${DISPLAY}" && /usr/bin/numlockx on
 test -n "${DISPLAY}" && test -d ${HOME}/.config/xmodmap && ( xmodmap ${HOME}/.config/xmodmap/*.map & ) 2>/dev/null
-. "$HOME/.cargo/env"
+. "${HOME}/.cargo/env"
