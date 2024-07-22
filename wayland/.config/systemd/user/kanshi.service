@@ -1,0 +1,11 @@
+# https://docs.daper.io/install-linux/desktop/kanshi/
+#
+# - Removed 'sway-session.target'.
+#   sway not started as a systemd service
+[Unit]
+Description=Dynamic output configuration for Wayland compositors
+Documentation=https://sr.ht/~emersion/kanshi
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/kanshi
