@@ -234,6 +234,17 @@ $bindsym $mod+Shift+equal   move container to workspace number 11: mail
 $bindsym $mod+Shift+percent move container to workspace number 12: chat
 
 
+# Screen off.
+$bindsym XF86Display         output - dpms toggle
+$bindsym XF86MonBrightnessUp output - dpms on
+
+# Pulse Audio controls
+$bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@   5%+    && $notify_status
+$bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@   5%-    && $notify_status
+$bindsym XF86AudioMute        exec wpctl set-mute   @DEFAULT_AUDIO_SINK@   toggle && $notify_status
+$bindsym XF86AudioMicMute     exec wpctl set-mute   @DEFAULT_AUDIO_SOURCE@ toggle && $notify_status
+
+
 exec_always "systemctl --user restart kanshi.service"
 
 #
