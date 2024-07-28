@@ -1,13 +1,11 @@
 #
 # ~/.bash_profile
 #
+export PATH="${HOME}/.local/bin:${PATH}"
+export VDPAU_DRIVER=radeonsi
 
+[[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-HISTFILESIZE=2000
-HISTSIZE=2000
-# Append history instead of overwriting
-shopt -s histappend
-
-# Startx
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx -- -keeptty -nolisten tcp &> ~/.xorg.log
+# If running from tty1 start sway
+[ "$(tty)" = "/dev/tty1" ] && exec dbus-run-session sway
