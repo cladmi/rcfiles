@@ -161,6 +161,10 @@ input "type:keyboard" {
 #
 # Layout stuff:
 #
+
+    # Set default to vertical
+    default_orientation vertical
+
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
