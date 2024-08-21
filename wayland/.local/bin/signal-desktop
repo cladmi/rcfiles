@@ -1,0 +1,6 @@
+#! /bin/sh
+
+# Need signal-desktop-fix-sway to handle window not showing at start.
+# https://github.com/signalapp/Signal-Desktop/issues/6368
+
+exec /usr/bin/signal-desktop --enable-features=UseOzonePlatform --ozone-platform=wayland "$@"

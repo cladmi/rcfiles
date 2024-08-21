@@ -238,10 +238,9 @@ $bindsym $mod+Shift+equal   move container to workspace number 11: mail
 $bindsym $mod+Shift+percent move container to workspace number 12: chat
 
 
-assign [app_id="^whatsapp-for-linux$"] workspace number 10
+assign [app_id="^signal$"] workspace number 10
 assign [app_id="^org.telegram.desktop$"] workspace number 10
-# X11Wayland apps
-assign [class="^Signal$"] workspace number 10
+assign [app_id="^whatsapp-for-linux$"] workspace number 10
 
 
 # Screen off.
