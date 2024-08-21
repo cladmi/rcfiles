@@ -255,6 +255,10 @@ $bindsym XF86AudioMute        exec wpctl set-mute   @DEFAULT_AUDIO_SINK@   toggl
 $bindsym XF86AudioMicMute     exec wpctl set-mute   @DEFAULT_AUDIO_SOURCE@ toggle && $notify_status
 
 
+# Detect XWayland windows.
+for_window [shell="xwayland"] title_format "[XWayland] %title"
+
+
 exec_always "systemctl --user restart kanshi.service"
 
 #
