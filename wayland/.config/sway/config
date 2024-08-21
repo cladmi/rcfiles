@@ -37,7 +37,9 @@ font pango:DejaVu Sans Mono 10
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+set $WALLPAPER ${HOME}/images/wallpapers/Detail-from-Hieronymus-Boschs-Garden-of-Earthly-Delights-Netherlands-c.1490-1510.jpg
 output * bg #000000 solid_color
+output * bg $WALLPAPER fit #000000
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # Example configuration:
