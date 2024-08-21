@@ -249,10 +249,10 @@ $bindsym XF86Display         output - dpms toggle
 $bindsym XF86MonBrightnessUp output - dpms on
 
 # Pulse Audio controls
-$bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@   5%+    && $notify_status
-$bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@   5%-    && $notify_status
-$bindsym XF86AudioMute        exec wpctl set-mute   @DEFAULT_AUDIO_SINK@   toggle && $notify_status
-$bindsym XF86AudioMicMute     exec wpctl set-mute   @DEFAULT_AUDIO_SOURCE@ toggle && $notify_status
+$bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@   5%+
+$bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@   5%-
+$bindsym XF86AudioMute        exec wpctl set-mute   @DEFAULT_AUDIO_SINK@   toggle
+$bindsym XF86AudioMicMute     exec wpctl set-mute   @DEFAULT_AUDIO_SOURCE@ toggle
 
 
 # Detect XWayland windows.
@@ -266,11 +266,12 @@ exec_always "systemctl --user restart kanshi.service"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
+    swaybar_command waybar
     position bottom
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+    # status_command while date +'%Y-%m-%d %X'; do sleep 1; done
 
     colors {
         statusline #ffffff
