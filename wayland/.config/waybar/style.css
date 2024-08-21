@@ -4,8 +4,14 @@
     font-size: 13px;
 }
 
+@define-color background #000000;
+@define-color background_hover #a37800;
+@define-color textcolor #ffffff;
+@define-color i3blue #285577;
+
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
+    /* background-color: rgba(43, 48, 59, 0.5); */
+    background-color: rgba(0, 0, 0, 0.5);
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);
     color: #ffffff;
     transition-property: background-color;
@@ -25,14 +31,18 @@ window#waybar.solo {
 }
 */
 
+/*
 window#waybar.termite {
     background-color: #3F3F3F;
 }
+*/
 
+/*
 window#waybar.chromium {
     background-color: #000000;
     border: none;
 }
+*/
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
@@ -48,10 +58,6 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
-/* you can set a style on hover for any module like this */
-#pulseaudio:hover {
-    background-color: #a37800;
-}
 
 #workspaces button {
     padding: 0 5px;
@@ -64,7 +70,8 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
+    /* background-color: #64727D; */
+    background-color: @i3blue;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -94,7 +101,11 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
-    padding: 0 10px;
+    background-color: #000000;
+
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    /* padding: 0 10px; */
+    padding: 0 5px;
     color: #ffffff;
 }
 
@@ -114,17 +125,23 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    /* background-color: #64727D; */
+}
+#clock:hover {
+    background-color: @background_hover;
 }
 
 #battery {
-    background-color: #ffffff;
-    color: #000000;
+    /* background-color: #ffffff; */
+    /* color: #000000; */
+}
+#battery:hover {
+    background-color: @background_hover;
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
+    /* color: #ffffff; */
+    /* background-color: #26A65B; */
 }
 
 @keyframes blink {
@@ -169,8 +186,8 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    /* background-color: #2ecc71; */
+    /* color: #000000; */
 }
 
 #memory {
@@ -186,7 +203,10 @@ label:focus {
 }
 
 #network {
-    background-color: #2980b9;
+    /* background-color: #2980b9; */
+}
+#network:hover {
+    background-color: @background_hover;
 }
 
 #network.disconnected {
@@ -194,13 +214,18 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    /* background-color: #f1c40f; */
+    background-color: #000000;
+    color: #ffffff;
 }
 
 #pulseaudio.muted {
     background-color: #90b1b1;
     color: #2a5c45;
+}
+/* you can set a style on hover for any module like this */
+#pulseaudio:hover {
+    background-color: @background_hover;
 }
 
 #wireplumber {
@@ -227,7 +252,7 @@ label:focus {
 }
 
 #temperature {
-    background-color: #f0932b;
+    /* background-color: #000000; */
 }
 
 #temperature.critical {
@@ -235,7 +260,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    /* background-color: #2980b9; */
 }
 
 #tray > .passive {
@@ -274,16 +299,16 @@ label:focus {
 }
 
 #language {
-    background: #00b093;
-    color: #740864;
+    background: @background;
+    color: @textcolor;
     padding: 0 5px;
     margin: 0 5px;
     min-width: 16px;
 }
 
 #keyboard-state {
-    background: #97e1ad;
-    color: #000000;
+    /* background: #97e1ad; */
+    /* color: #000000; */
     padding: 0 0px;
     margin: 0 5px;
     min-width: 16px;
