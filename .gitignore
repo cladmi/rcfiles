@@ -8,5 +8,8 @@ Session.vim
 .netrwhist
 *~
 
+# Local shortcut script.
+stow.sh
+
 # Deb files
 *.deb
