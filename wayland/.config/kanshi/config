@@ -6,6 +6,7 @@
 
 # eDP-1 'California Institute of Technology 0x1413 Unknown'
 # DP-2  'Dell Inc. DELL U2414H 9TG463AM2LLL'
+# HDMI-A-1 ^^
 
 profile laptop {
     output eDP-1 mode 1920x1200 position 0,0
@@ -14,4 +15,9 @@ profile laptop {
 profile home {
     output eDP-1 mode 1920x1200 position 1920,0
     output DP-2 mode 1920x1080 position 0,0
+}
+
+profile home_hdmi_left {
+    output eDP-1 mode 1920x1200 position 0,0
+    output HDMI-A-1 mode 1920x1080 position 1920,0
 }
