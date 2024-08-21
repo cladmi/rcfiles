@@ -243,9 +243,9 @@ assign [app_id="^org.telegram.desktop$"] workspace number 10
 assign [app_id="^whatsapp-for-linux$"] workspace number 10
 
 
-# Screen off.
-$bindsym XF86Display         output - dpms toggle
-$bindsym XF86MonBrightnessUp output - dpms on
+# Screen off ('power' is new name for 'dpms')
+$bindsym XF86Display         output - power toggle
+$bindsym XF86MonBrightnessUp output - power on
 
 # Pulse Audio controls
 $bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@   5%+
