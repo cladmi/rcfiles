@@ -256,6 +256,10 @@ $bindsym XF86AudioMute        exec wpctl set-mute   @DEFAULT_AUDIO_SINK@   toggl
 $bindsym XF86AudioMicMute     exec wpctl set-mute   @DEFAULT_AUDIO_SOURCE@ toggle
 
 
+# Lock
+$bindsym $mod+Delete exec swaylock --daemonize
+
+
 # Detect XWayland windows.
 for_window [shell="xwayland"] title_format "[XWayland] %title"
 
