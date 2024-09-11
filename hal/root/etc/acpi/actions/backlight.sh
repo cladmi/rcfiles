@@ -5,10 +5,10 @@ case "$1" in
     video/brightness*)
         case "$2" in
             BRTUP)
-                xbacklight -inc 5
+                brightnessctl --quiet --exponent set 5%+
                 ;;
             BRTDN)
-                xbacklight -dec 5
+                brightnessctl --quiet --exponent set 5%-
                 ;;
         esac
         ;;
