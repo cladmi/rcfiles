@@ -5,9 +5,11 @@
 }
 
 @define-color background #000000;
-@define-color background_hover #a37800;
 @define-color textcolor #ffffff;
 @define-color i3blue #285577;
+
+@define-color background_disabled #90b1b1;
+@define-color textcolor_disabled #2a5c45;
 
 window#waybar {
     /* background-color: rgba(43, 48, 59, 0.5); */
@@ -100,13 +102,58 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
-#mpd {
-    background-color: #000000;
+#mpd,
+#LAST {
+    /* background-color: #000000; */
 
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+    box-shadow: inset 0 -3px transparent;
     /* padding: 0 10px; */
     padding: 0 5px;
     color: #ffffff;
+}
+
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#temperature:hover,
+#backlight:hover,
+#network:hover,
+#pulseaudio:hover,
+#wireplumber:hover,
+#custom-media:hover,
+#tray:hover,
+#mode:hover,
+#idle_inhibitor:hover,
+#scratchpad:hover,
+#power-profiles-daemon:hover,
+#mpd:hover,
+#LAST {
+    background: inherit;
+    box-shadow: inset 0 -3px #2a5c45;
+
+    transition-property: box-shadow;
+    transition-duration: .5s;
+
+}
+
+/* Inactive */
+#battery:hover,
+#cpu:hover,
+#temperature:hover,
+#LAST {
+    background: inherit;
+    box-shadow: inset 0 -3px #666666;
+
+}
+
+/* Scroll actions */
+#pulseaudio:hover,
+#LAST {
+    box-shadow: inset 0 -3px #90b1b1;
 }
 
 #window,
@@ -122,21 +169,6 @@ button:hover {
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
-}
-
-#clock {
-    /* background-color: #64727D; */
-}
-#clock:hover {
-    background-color: @background_hover;
-}
-
-#battery {
-    /* background-color: #ffffff; */
-    /* color: #000000; */
-}
-#battery:hover {
-    background-color: @background_hover;
 }
 
 #battery.charging, #battery.plugged {
@@ -185,56 +217,13 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {
-    /* background-color: #2ecc71; */
-    /* color: #000000; */
-}
 
-#memory {
-    background-color: #9b59b6;
-}
-
-#disk {
-    background-color: #964B00;
-}
-
-#backlight {
-    background-color: #90b1b1;
-}
-
-#network {
-    /* background-color: #2980b9; */
-}
-#network:hover {
-    background-color: @background_hover;
-}
-
-#network.disconnected {
-    background-color: #f53c3c;
-}
-
-#pulseaudio {
-    /* background-color: #f1c40f; */
-    background-color: #000000;
-    color: #ffffff;
-}
-
-#pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
-}
-/* you can set a style on hover for any module like this */
-#pulseaudio:hover {
-    background-color: @background_hover;
-}
-
-#wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
-}
-
-#wireplumber.muted {
-    background-color: #f53c3c;
+#network.disconnected,
+#pulseaudio.muted,
+#wireplumber.muted,
+#LAST {
+    background-color: @background_disabled;
+    color: @textcolor_disabled;
 }
 
 #custom-media {
@@ -249,10 +238,6 @@ label:focus {
 
 #custom-media.custom-vlc {
     background-color: #ffa000;
-}
-
-#temperature {
-    /* background-color: #000000; */
 }
 
 #temperature.critical {
