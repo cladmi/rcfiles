@@ -269,8 +269,8 @@ $bindsym $mod+Delete exec swaylock --daemonize
 # Detect XWayland windows.
 for_window [shell="xwayland"] title_format "[XWayland] %title"
 
-# Hide after 5000ms
-seat * hide_cursor 5000
+# Hide after 10000ms
+seat * hide_cursor 10000
 
 
 exec_always "systemctl --user restart kanshi.service"
