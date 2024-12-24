@@ -85,6 +85,7 @@ input "type:keyboard" {
     xkb_layout fr,us
     xkb_variant bepo,
     xkb_options grp:sclk_toggle
+    xkb_options caps:none
 }
 
 ### Key bindings
