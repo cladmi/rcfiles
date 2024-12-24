@@ -1,0 +1,1 @@
+alias private='unset HISTFILE'
