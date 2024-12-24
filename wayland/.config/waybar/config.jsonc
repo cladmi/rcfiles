@@ -29,6 +29,11 @@
         // "sway/language",
         "battery",
         // "battery#bat2",
+        //
+        // https://github.com/jeremija/wl-gammarelay
+        "custom/wl-gammarelay-temperature",
+        "custom/wl-gammarelay-brightness",
+        //
         "clock",
         "tray"
         //,
@@ -193,6 +198,26 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+    "custom/wl-gammarelay-temperature": {
+        "format": "{} ",
+        "exec": "wl-gammarelay --subscribe Temperature",
+        "on-click":
+            "busctl --user --timeout=1 -- set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 6500",
+        "on-scroll-up":
+            "busctl --user --timeout=1 -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +100",
+        "on-scroll-down":
+            "busctl --user --timeout=1 -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -100"
+    },
+    "custom/wl-gammarelay-brightness": {
+        "format": "{} ",
+        "exec": "wl-gammarelay --subscribe Brightness",
+        "on-click":
+            "busctl --user --timeout=1 -- set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d 1.0",
+        "on-scroll-up":
+            "busctl --user --timeout=1 -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d +0.02",
+        "on-scroll-down":
+            "busctl --user --timeout=1 -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d -0.02"
     },
     "custom/media": {
         "format": "{icon} {}",
