@@ -9,13 +9,14 @@ GREEN="\[$(tput setaf 2)\]"
 BLUE="\[$(tput setaf 4)\]"
 CYAN="\[$(tput setaf 6)\]"
 GRAY="\[$(tput setaf 7)\]"
+DARK_GRAY="\[$(tput setaf 8)\]"
 
 # VALUES
 # Using Bold font by default
 # So reset with BR after
 USERHOST="${GREEN}\u@\h${BR}"
 WORKDIR="${BLUE}\w${BR}"
-TIME="${BLACK}\D{%k:%M:%S}${BR}"
+TIME="${DARK_GRAY}\D{%k:%M:%S}${BR}"
 RETVAL="${R}${GRAY}\$?${BR}"
 
 # Two lines PS1, with added time and return value
