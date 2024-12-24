@@ -243,6 +243,7 @@ $bindsym $mod+Shift+percent move container to workspace number 12: chat
 assign [app_id="^signal$"] workspace number 10
 assign [app_id="^org.telegram.desktop$"] workspace number 10
 assign [app_id="^whatsapp-for-linux$"] workspace number 10
+assign [app_id="^wasistlos$"] workspace number 10
 
 
 # Screen off ('power' is new name for 'dpms')
