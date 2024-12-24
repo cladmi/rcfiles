@@ -274,6 +274,7 @@ seat * hide_cursor 10000
 
 
 exec_always "systemctl --user restart kanshi.service"
+$bindsym $mod+x exec systemctl --user restart kanshi.service
 
 #
 # Status Bar:
