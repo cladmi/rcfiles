@@ -56,13 +56,16 @@ output eDP-1 resolution 1920x1200 position 0 0
 # Example configuration:
 #
 # exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
+#          timeout 300 'swaylock --daemonize' \
 #          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
+#          before-sleep 'swaylock --daemonize'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
+
+# Values in swayidle config file for the 'swaylock' handling'.
+exec swayidle -w
 
 ### Input configuration
 #
