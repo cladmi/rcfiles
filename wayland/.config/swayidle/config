@@ -1,2 +1,2 @@
 # Auto lock if 'swaylock' is used.
-timeout 10 'if pgrep -x swaylock; then swaymsg "output - power off"; fi' resume 'swaymsg "output - power on"'
+timeout 10 'if pgrep -x swaylock; then swaymsg "output - power off"; fi' resume 'if pgrep -x swaylock; then swaymsg "output - power on"; fi'
