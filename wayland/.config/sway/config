@@ -158,7 +158,7 @@ input "type:keyboard" {
     $bindsym $mod+Shift+parenleft move container to workspace number 4
     $bindsym $mod+Shift+parenright move container to workspace number 5
     $bindsym $mod+Shift+at move container to workspace number 6
-    $bindsym $mod+Shift+plus container to workspace number 7
+    $bindsym $mod+Shift+plus move container to workspace number 7
     $bindsym $mod+Shift+minus move container to workspace number 8
     $bindsym $mod+Shift+slash move container to workspace number 9
     $bindsym $mod+Shift+asterisk move container to workspace number 10
