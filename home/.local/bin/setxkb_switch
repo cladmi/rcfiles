@@ -1,6 +1,11 @@
 #! /bin/bash
 
-CURRENT=$(setxkbmap  -query  | grep -e layout -e variant | sed -e 's/.*: *//' | tr '\n' ' ' | sed 's/ *$//')
+SETXKBMAP=$(which setxkbmap)
+setxkbmap() {
+    "${SETXKBMAP}" "$@" 2>&1 | grep -v 'WARNING: Running setxkbmap against an Xwayland server'
+}
+
+CURRENT=$(setxkbmap -query | grep -e layout -e variant | sed -e 's/.*: *//' | tr '\n' ' ' | sed 's/ *$//')
 
 case ${CURRENT} in
     "fr bepo")
@@ -12,7 +17,7 @@ case ${CURRENT} in
         setxkbmap fr bepo
         ;;
     *)
-        echo Unkwown, switch to 'fr bepo'
+        echo "Unkwown: ${CURRENT}, switch to 'fr bepo'"
         setxkbmap fr bepo
         ;;
 esac
