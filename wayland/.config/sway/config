@@ -276,7 +276,7 @@ seat * hide_cursor 10000
 exec_always "systemctl --user restart kanshi.service"
 $bindsym $mod+x exec systemctl --user restart kanshi.service
 
-exec wl-gammarelay
+exec_always "pkill wl-gammarelay; exec wl-gammarelay 2>&1 >/dev/null"
 
 #
 # Status Bar:
