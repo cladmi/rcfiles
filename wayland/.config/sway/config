@@ -278,6 +278,11 @@ $bindsym $mod+x exec systemctl --user restart kanshi.service
 
 exec_always "pkill wl-gammarelay; exec wl-gammarelay 2>&1 >/dev/null"
 
+# Screenshot of current screen.
+$bindsym Print       exec grim -o $(swaymsg -t get_outputs  | jq --raw-output '.[] | select(.focused) | .name')
+# Screenshot of all screens.
+$bindsym Shift+Print exec grim
+
 #
 # Status Bar:
 #
