@@ -1,5 +1,9 @@
 #! /bin/sh
 
+# Spell checking with multiple languages
+# https://superuser.com/a/1701016
+export LANGUAGE=${LANG}:en_US.UTF-8:de_DE.UTF-8:fr_FR.UTF-8
+
 # Need signal-desktop-fix-sway to handle window not showing at start.
 # https://github.com/signalapp/Signal-Desktop/issues/6368
 
