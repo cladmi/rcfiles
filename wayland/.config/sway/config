@@ -87,6 +87,10 @@ input "type:keyboard" {
     xkb_options grp:sclk_toggle
     xkb_options caps:none
 }
+# Ducky One S specific config
+input "1241:662:USB-HID_Keyboard" {
+    xkb_numlock enabled
+}
 
 ### Key bindings
 #
