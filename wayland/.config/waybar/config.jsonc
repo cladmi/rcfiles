@@ -33,6 +33,7 @@
         // https://github.com/jeremija/wl-gammarelay
         "custom/wl-gammarelay-temperature",
         "custom/wl-gammarelay-brightness",
+        "custom/wl-gammarelay-gamma",
         //
         "clock",
         "tray"
@@ -218,6 +219,16 @@
             "busctl --user --timeout=1 -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d +0.02",
         "on-scroll-down":
             "busctl --user --timeout=1 -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d -0.02"
+    },
+    "custom/wl-gammarelay-gamma": {
+        "format": "{}% γ",
+        "exec": "wl-gammarelay-rs watch {g}",
+        "on-click":
+            "busctl --user --timeout=1 -- set-property rs.wl-gammarelay / rs.wl.gammarelay Gamma d 1.0",
+        "on-scroll-up":
+            "busctl --user --timeout=1 -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateGamma d +0.02",
+        "on-scroll-down":
+            "busctl --user --timeout=1 -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateGamma d -0.02"
     },
     "custom/media": {
         "format": "{icon} {}",
