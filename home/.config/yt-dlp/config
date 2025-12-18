@@ -1,0 +1,10 @@
+--embed-chapters
+
+--write-subs
+--write-auto-subs
+--embed-subs
+
+--sub-langs=en-orig,fr-orig,en.*,fr.*
+
+--sponsorblock-mark=all
+--sponsorblock-remove=Sponsor
