@@ -221,7 +221,7 @@
             "busctl --user --timeout=1 -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d -0.02"
     },
     "custom/wl-gammarelay-gamma": {
-        "format": "{}% γ",
+        "format": "{} γ",
         "exec": "wl-gammarelay-rs watch {g}",
         "on-click":
             "busctl --user --timeout=1 -- set-property rs.wl-gammarelay / rs.wl.gammarelay Gamma d 1.0",
