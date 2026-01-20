@@ -1,13 +1,13 @@
 [submodule "home/.vim/pack/ctrlpvim/start/ctrlp.vim"]
-	path = home/.vim/pack/ctrlpvim/start/ctrlp.vim
+	path = home/.config/vim/pack/ctrlpvim/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
 	branch = master
 [submodule "home/.vim/bundle/vim-fugitive"]
-	path = home/.vim/pack/tpope/start/vim-fugitive
+	path = home/.config/vim/pack/tpope/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 	branch = master
 [submodule "home/.vim/bundle/vim-python-pep8-indent"]
-	path = home/.vim/bundle/vim-python-pep8-indent
+	path = home/.config/vim/bundle/vim-python-pep8-indent
 	url = https://github.com/Vimjas/vim-python-pep8-indent.git
 	branch = master
 [submodule "opsy/.scm_breeze"]
@@ -19,13 +19,13 @@
 	url = https://github.com/pyenv/pyenv.git
 	branch = master
 [submodule "home/.vim/pack/plugins/start/rust.vim"]
-	path = opsy/.vim/pack/plugins/start/rust.vim
+	path = opsy/.config/vim/pack/plugins/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
 [submodule "home/.vim/repos/vim-pathogen"]
-	path = home/.vim/repos/vim-pathogen
+	path = home/.config/vim/repos/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
 	branch = master
 [submodule "wayland/.vim/pack/vim-wayland-clipboard/start/vim-wayland-clipboard"]
-	path = wayland/.vim/pack/vim-wayland-clipboard/start/vim-wayland-clipboard
+	path = wayland/.config/vim/pack/vim-wayland-clipboard/start/vim-wayland-clipboard
 	url = https://github.com/jasonccox/vim-wayland-clipboard.git
 	branch = master
