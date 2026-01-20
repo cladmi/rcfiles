@@ -1,10 +1,16 @@
+--verbose
+
 --embed-chapters
 
---write-subs
+# Weird mix behavior, that 'write-subs' decides to not delete sub files.
+#--write-subs
+# But 'embed-subs' does not trigger downloading subtitles
+# Adding '--write-auto-subs' correctly download subs (generated) and does not
+# delete files.
 --write-auto-subs
 --embed-subs
 
---sub-langs=en-orig,fr-orig,en.*,fr.*
+--sub-langs=en-orig,fr-orig
 
 --sponsorblock-mark=all
 --sponsorblock-remove=Sponsor
