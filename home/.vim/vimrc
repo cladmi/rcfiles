@@ -1,5 +1,5 @@
 " Autoreload vimrc
-autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost vimrc source %
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
