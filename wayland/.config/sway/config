@@ -84,8 +84,7 @@ exec swayidle -w
 input "type:keyboard" {
     xkb_layout fr,us
     xkb_variant bepo,
-    xkb_options grp:sclk_toggle
-    xkb_options caps:none
+    xkb_options grp:sclk_toggle,caps:none
 }
 # Ducky One S specific config
 input "1241:662:USB-HID_Keyboard" {
