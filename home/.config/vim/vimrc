@@ -1,6 +1,11 @@
 " Autoreload vimrc
 autocmd! bufwritepost vimrc source %
 
+if empty($XDG_STATE_HOME)
+    let $XDG_STATE_HOME=$HOME."/.local/state"
+endif
+set viminfofile=$XDG_STATE_HOME/vim/viminfo
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Setup Pathogen to manage your plugins
