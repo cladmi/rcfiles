@@ -25,3 +25,9 @@ profile home_hdmi_left {
     output eDP-1
     output HDMI-A-1 position 1920,0
 }
+
+# Use with `kanshictl switch laptop_force`
+profile laptop_force {
+    output eDP-1
+    output DP-2 disable
+}
