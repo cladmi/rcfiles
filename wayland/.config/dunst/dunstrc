@@ -1,0 +1,2 @@
+# Need an existing config to parse `dunstrc.d/*.conf` files.
+# vim: ft=cfg
