@@ -1,5 +1,3 @@
---verbose
-
 --embed-chapters
 
 # Weird mix behavior, that 'write-subs' decides to not delete sub files.
