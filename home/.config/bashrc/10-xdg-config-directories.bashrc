@@ -1,6 +1,8 @@
 # Workaround applications not using XDG base directories.
 # https://wiki.archlinux.org/title/XDG_Base_Directory
 
+export HISTFILE="$XDG_STATE_HOME"/bash/history
+
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 
 export GOPATH="$XDG_DATA_HOME"/go
