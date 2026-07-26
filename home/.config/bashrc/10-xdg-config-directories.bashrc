@@ -17,3 +17,6 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 export PYTHON_HISTORY=$XDG_STATE_HOME/python/history
 export PYTHONPYCACHEPREFIX=$XDG_CACHE_HOME/python
 export PYTHONUSERBASE=$XDG_DATA_HOME/python
+
+export WGETRC="$XDG_CONFIG_HOME/wgetrc"
+alias wget='wget --hsts-file="$XDG_STATE_HOME/wget-hsts"'
