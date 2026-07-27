@@ -1,9 +1,11 @@
-# In .gitconfig put your personnal configuration
+# In 'config_user' put your personal configuration
 #
 # [user]
 #      email = email@addre.sse
 #      name = Your Name
 
+[include]
+    path = config_user.inc
 [push]
     default = upstream
 [alias]
