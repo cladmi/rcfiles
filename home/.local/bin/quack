@@ -2,5 +2,4 @@
 
 OPTIONS=()
 OPTIONS+=(-really-quiet)
-OPTIONS+=(-nolirc)
-exec mplayer "${OPTIONS[@]}" ${HOME}/.local/share/sounds/Quack.wav
+exec mpv "${OPTIONS[@]}" ${HOME}/.local/share/sounds/Quack.wav
