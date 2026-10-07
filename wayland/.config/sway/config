@@ -91,6 +91,10 @@ input "1241:662:USB-HID_Keyboard" {
     xkb_numlock enabled
 }
 
+input "type:touchpad" {
+    click_method none
+}
+
 ### Key bindings
 #
 # Basics:
