@@ -19,6 +19,9 @@
         "pulseaudio",
         "network",
         /* "power-profiles-daemon", */
+
+        "custom/separator",
+
         "cpu",
         // "memory",
         "temperature",
@@ -26,13 +29,17 @@
         // "sway/language",
         "battery",
         // "battery#bat2",
-        //
+
+        "custom/separator",
+
         "backlight",
         // https://github.com/jeremija/wl-gammarelay
         "custom/wl-gammarelay-temperature",
         "custom/wl-gammarelay-brightness",
         "custom/wl-gammarelay-gamma",
-        //
+
+        "custom/separator",
+
         "clock",
         "tray"
         //,
