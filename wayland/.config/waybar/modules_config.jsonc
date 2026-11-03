@@ -101,6 +101,9 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
+        "on-scroll-up": "brightnessctl --quiet --exponent set 5%+",
+        "on-scroll-down": "brightnessctl --quiet --exponent set 5%-",
+        "on-click": "brightnessctl --quiet set 100%"
         /* "format-icons": ["", "", "", "", "", "", "", "", ""] */
     },
     "battery": {
