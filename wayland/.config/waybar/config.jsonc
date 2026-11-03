@@ -33,7 +33,7 @@
         "custom/separator",
 
         "backlight",
-        // https://github.com/jeremija/wl-gammarelay
+        // https://github.com/MaxVerevkin/wl-gammarelay-rs
         "custom/wl-gammarelay-temperature",
         "custom/wl-gammarelay-brightness",
         "custom/wl-gammarelay-gamma",
