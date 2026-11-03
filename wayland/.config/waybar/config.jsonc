@@ -1,7 +1,7 @@
 // -*- mode: jsonc -*-
 [
     {
-        // "output": "eDP-1",
+        "output": "eDP-1",
         "include": [
             "common_config.jsonc",
             "modules_config.jsonc"
@@ -35,6 +35,54 @@
             "custom/separator",
 
             "backlight",
+            // https://github.com/MaxVerevkin/wl-gammarelay-rs
+            "custom/wl-gammarelay-temperature",
+            "custom/wl-gammarelay-brightness",
+            "custom/wl-gammarelay-gamma",
+
+            "custom/separator",
+
+            "clock",
+            "tray"
+            //,
+            // "custom/power"
+        ]
+    },
+    {
+        "output": "!eDP-1",
+        "include": [
+            "common_config.jsonc",
+            "modules_config.jsonc"
+        ],
+        // Choose the order of the modules
+        "modules-left": [
+            "sway/workspaces"
+            // "sway/mode",
+            // "sway/scratchpad",
+            // "custom/media"
+        ],
+        // "sway/window"
+        "modules-center": [],
+        "modules-right": [
+            // "mpd",
+            // "idle_inhibitor",
+            "pulseaudio",
+            "network",
+            /* "power-profiles-daemon", */
+
+            "custom/separator",
+
+            "cpu",
+            // "memory",
+            "temperature",
+            // "keyboard-state",
+            // "sway/language",
+            "battery",
+            // "battery#bat2",
+
+            "custom/separator",
+
+            //"backlight",
             // https://github.com/MaxVerevkin/wl-gammarelay-rs
             "custom/wl-gammarelay-temperature",
             "custom/wl-gammarelay-brightness",
