@@ -1,0 +1,4 @@
+#! /bin/sh
+set -xe
+sudo renice -n -5 $$
+exec /usr/bin/gmetronome
