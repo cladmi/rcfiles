@@ -1,5 +1,8 @@
 #! /bin/sh
 
+# https://bootlin.com/doc/training/audio/audio-slides.pdf
+# See tools from page 240
+
 set -e
 
 readonly COMMAND="$1"
@@ -12,6 +15,12 @@ stop()
     pactl unload-module module-null-sink || true > /dev/null
 }
 
+#MODULE=libpipewire-module-loopback
+#pw-cli unload-module "${MODULE}" 2>/dev/null
+#pw-cli load-module "${MODULE}" node.name="combined-capture" combine.mode=capture
+#pw-cli load-module "${MODULE}" node.name="combined-playback" combine.mode=playback
+#pw-cli load-module "${MODULE}" node.name="combined-sink" combine.mode=sink
+#pw-cli load-module "${MODULE}" node.name="combined-source" combine.mode=source
 create_sinks()
 {
     pactl load-module module-null-sink media.class=Audio/Source/Virtual sink_name=capture-mic-sink channel_map=mono
