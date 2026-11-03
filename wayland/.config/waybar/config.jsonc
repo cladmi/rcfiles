@@ -22,12 +22,12 @@
         "cpu",
         // "memory",
         "temperature",
-        // "backlight",
         // "keyboard-state",
         // "sway/language",
         "battery",
         // "battery#bat2",
         //
+        "backlight",
         // https://github.com/jeremija/wl-gammarelay
         "custom/wl-gammarelay-temperature",
         "custom/wl-gammarelay-brightness",
