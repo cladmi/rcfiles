@@ -9,6 +9,4 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-
-export EDITOR="vim"
 [[ -f ~/.config/bashrc/bashrc ]] && . ~/.config/bashrc/bashrc
