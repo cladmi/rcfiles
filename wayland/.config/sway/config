@@ -265,8 +265,8 @@ assign [app_id="^teams-for-linux"] workspace number 12:chat
 
 
 # Screen off ('power' is new name for 'dpms')
-$bindsym XF86Display         output - power toggle
-$bindsym XF86MonBrightnessUp output - power on
+$bindsym XF86Display         output * power toggle
+$bindsym XF86MonBrightnessUp output * power on
 
 # Pulse Audio controls
 $bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@   5%+
