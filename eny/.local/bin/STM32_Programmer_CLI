@@ -1,0 +1,3 @@
+#! /bin/sh
+set -x
+exec /opt/stm32cubeprog/bin/STM32_Programmer_CLI "$@"
