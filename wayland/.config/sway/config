@@ -254,6 +254,10 @@ $bindsym $mod+Shift+equal   move container to workspace number 11: mail
 $bindsym $mod+Shift+percent move container to workspace number 12: chat
 
 
+# Set name with "Window Titler" extension.
+# Cannot have a general setting otherwise new tabs be moved to 1 too.
+for_window [title="^\[media\] .*" app_id="^firefox$"] move container to workspace number 0
+
 assign [app_id="^minigalaxy$"] workspace number 9
 assign [class="^steam$"] workspace number 9
 assign [app_id="^signal$"] workspace number 10
