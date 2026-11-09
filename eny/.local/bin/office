@@ -1,2 +1,3 @@
 #! /bin/sh
-dex --autostart --search-paths ~/.config/autostart_office
+COMMAND="dex --autostart --search-paths ~/.config/autostart_office"
+swaymsg "workspace 1; exec ${COMMAND}"
