@@ -270,7 +270,7 @@ assign [app_id="^teams-for-linux$"] workspace number 12:chat
 
 
 # Screen off ('power' is new name for 'dpms')
-$bindsym XF86Display         output * power toggle
+$bindsym XF86Display         output * power off
 $bindsym XF86MonBrightnessUp output * power on
 
 # Pulse Audio controls
