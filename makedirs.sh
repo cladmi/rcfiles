@@ -1,6 +1,6 @@
 #! /bin/sh -x
 
-mkdir -p ~/.local/state
-mkdir -p ~/.local/state/bash
-mkdir -p ~/.local/state/python
-mkdir -p ~/.local/state/vim
+mkdir --verbose -p ~/.local/state
+mkdir --verbose -p ~/.local/state/bash
+mkdir --verbose -p ~/.local/state/python
+mkdir --verbose -p ~/.local/state/vim
